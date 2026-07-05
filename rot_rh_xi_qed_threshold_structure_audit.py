@@ -39,6 +39,24 @@ Important constraints:
   - forbidden mixed scale is reported as diagnostic only
 
 This is a numerical mechanism audit, not a proof and not a derivation of alpha.
+
+Usage
+
+python rot_rh_xi_qed_threshold_structure_audit.py `
+  --dps 100 `
+  --alpha0-inv 137.035999177 `
+  --me-MeV 0.51099895000 `
+  --mmu-MeV 105.6583755 `
+  --mtau-MeV 1776.86 `
+  --mpi-charged-MeV 139.57039 `
+  --quad-n 256 `
+  --quad-n-list "128,256,512" `
+  --interesting-rel-err 1e-3 `
+  --joint-rel-err 1e-3 `
+  --threshold-residual-ratio-min 0.05 `
+  --asymp-degradation-min 25 `
+  --out-prefix xi_qed_threshold_structure
+  
 """
 
 from __future__ import annotations
