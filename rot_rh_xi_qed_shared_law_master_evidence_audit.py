@@ -44,6 +44,42 @@ Outputs:
 
 Author: Buddhika Weerasooriya / ROT-RH audit branch
 License suggestion: MIT, Apache-2.0, or CC-BY-4.0 for data/results.
+
+Usage
+
+python scripts/rot_rh_xi_qed_shared_law_master_evidence_audit.py `
+  --dps 100 `
+  --alpha0-inv 137.035999177 `
+  --me-MeV 0.51099895000 `
+  --mmu-MeV 105.6583755 `
+  --mtau-MeV 1776.86 `
+  --mpi-charged-MeV 139.57039 `
+  --quad-n 256 `
+  --quad-n-list "128,256,512" `
+  --random-delta-controls 2000 `
+  --random-delta-band "0.5,1.8" `
+  --pseudo-mass-trials 512 `
+  --pseudo-mass-families "ratio_jitter_e_pi_only,ratio_jitter_pi_only,ratio_jitter_all,preserve_mu_pi_break_epi,random_ratio_ordered_wide,affine_plus_small_ratio_noise,preserve_e_pi_break_mupi,affine_scale_all" `
+  --pseudo-mass-jitter 0.25 `
+  --local-mass-grid-span 0.30 `
+  --local-mass-grid-steps 41 `
+  --rho-scan-log-span 0.50 `
+  --rho-scan-steps 401 `
+  --ratio2d-log-span 0.35 `
+  --ratio2d-steps 41 `
+  --synthetic-ratio-trials 2000 `
+  --synthetic-ratio-log-band 0.50 `
+  --seed 314159 `
+  --interesting-rel-err 1e-3 `
+  --joint-rel-err 1e-3 `
+  --max-joint-p 0.05 `
+  --strong-joint-p 0.01 `
+  --scheme-degradation-min 25 `
+  --threshold-residual-ratio-min 0.05 `
+  --sensitivity-min 0.02 `
+  --out-prefix results/xi_qed_shared_law_master_evidence
+
+
 """
 
 from __future__ import annotations
